@@ -1,0 +1,121 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.20.4",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "78b8035539bf9785e287a8f5c4b020cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "8ebd1eba36898ef2558bbce6c897ea06",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "36665b8ac6f72398452f104d2242d3a3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "f7837d0e3076c66948a0905d33e7169c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Starting training...\nEpoch 01 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 02 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 03 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 04 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 05 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 06 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 07 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 08 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 09 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 10 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 11 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 12 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 13 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 14 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 15 | Train Acc: 50.00% | Val Acc: 73.33%\nEpoch 16 | Train Acc: 91.43% | Val Acc: 50.00%\nEpoch 17 | Train Acc: 50.71% | Val Acc: 50.00%\nEpoch 18 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 19 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 20 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 21 | Train Acc: 50.00% | Val Acc: 50.00%\nEpoch 22 | Train Acc: 50.00% | Val Acc: 60.00%\nEpoch 23 | Train Acc: 69.29% | Val Acc: 86.67%\nEpoch 24 | Train Acc: 97.86% | Val Acc: 53.33%\nEpoch 25 | Train Acc: 75.00% | Val Acc: 50.00%\nEpoch 26 | Train Acc: 52.14% | Val Acc: 50.00%\nEpoch 27 | Train Acc: 50.71% | Val Acc: 50.00%\nEpoch 28 | Train Acc: 52.14% | Val Acc: 53.33%\nEpoch 29 | Train Acc: 67.14% | Val Acc: 90.00%\nEpoch 30 | Train Acc: 93.57% | Val Acc: 90.00%\nFinal Test Accuracy: 96.67%\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "7a03a9df958aed7fa5fd7a45c05e61e5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Prediction: inside (Probability: 0.4992)\nTrue Label: inside\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "PKri",
+      "code_hash": "8aa20ce24600ff377e6b79c3fb71847f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\n-----Validation Performance------\nAccuracy: 90.00%\n\nConfusion Matrix:\n[[15  0]\n [ 3 12]]\n\nClassification Report:\n              precision    recall  f1-score   support\n\n      inside       0.83      1.00      0.91        15\n     outside       1.00      0.80      0.89        15\n\n    accuracy                           0.90        30\n   macro avg       0.92      0.90      0.90        30\nweighted avg       0.92      0.90      0.90        30\n\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Xref",
+      "code_hash": "d2b7383c11fc80cd68b39650e8b0a9d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "## Model Architecture - CNN for dot position w.r.t fence\n\nInput Transformation & Convolutional Feature Extraction:\nInput Image (64x64x1) -> Convolution 1 (Outputs 8 channels) -> MaxPool2d (Reduces dimensions to 32x32) -> Convolution 2 (Outputs 16 channels) -> MaxPool2d (Reduces dimensions to 16x16).\n(Note: Kernel 3x3, ReLU activation, and MaxPool2d 2x2 are the same for all convolutional blocks).\n\nFlattening Step (Connecting Convolutions to Dense Layers):\nOutput of Conv 2 -> 3D Tensor of dimensions [16 channels, 16 height, 16 width] -> Flatten Layer -> Unrolls into a 1D array of 4096 total nodes (16 * 16 * 16 = 4096).\n\nFully Connected (Hidden) Layers (Standard Extrapolation for Binary Classification):\nInput from Flatten -> Fully Connected Hidden Layer 1 (Linear Layer) -> Receives 4096 nodes -> Outputs a compressed feature representation (typically 128 or 256 nodes) -> ReLU activation -> Fully Connected Hidden Layer 2 (Optional but common) -> Receives 128 nodes -> Outputs 64 nodes -> ReLU activation.\n\nFinal Output Nodes:\nHidden Layer Output -> Final Linear Layer -> Outputs 1 node (using Sigmoid activation to yield a probability between 0 and 1) OR Outputs 2 nodes (using Softmax activation to yield discrete probabilities for \"inside\" and \"outside\")."
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

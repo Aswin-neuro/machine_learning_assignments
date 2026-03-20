@@ -1,0 +1,120 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.19.6"
+  },
+  "cells": [
+    {
+      "id": "Wapk",
+      "code_hash": "78b8035539bf9785e287a8f5c4b020cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tTPj",
+      "code_hash": "907cc6b08103f28f450fd3b9d1ab894a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "sRmJ",
+      "code_hash": "0b8ce6f79c26d5242550db94c863a413",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IUQy",
+      "code_hash": "c6ccee144b384df087007e8c06856fa3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Starting training...\nEpoch 01 | Train Acc: 95.71% | Val Acc: 100.00%\nEpoch 02 | Train Acc: 96.43% | Val Acc: 100.00%\nEpoch 03 | Train Acc: 98.57% | Val Acc: 86.67%\nEpoch 04 | Train Acc: 99.29% | Val Acc: 83.33%\nEpoch 05 | Train Acc: 98.57% | Val Acc: 86.67%\nEpoch 06 | Train Acc: 99.29% | Val Acc: 96.67%\nEpoch 07 | Train Acc: 100.00% | Val Acc: 100.00%\nEpoch 08 | Train Acc: 97.86% | Val Acc: 100.00%\nEpoch 09 | Train Acc: 97.86% | Val Acc: 100.00%\nEpoch 10 | Train Acc: 97.86% | Val Acc: 96.67%\nEpoch 11 | Train Acc: 100.00% | Val Acc: 86.67%\nEpoch 12 | Train Acc: 99.29% | Val Acc: 86.67%\nEpoch 13 | Train Acc: 99.29% | Val Acc: 96.67%\nEpoch 14 | Train Acc: 100.00% | Val Acc: 100.00%\nEpoch 15 | Train Acc: 98.57% | Val Acc: 100.00%\nEpoch 16 | Train Acc: 97.86% | Val Acc: 100.00%\nEpoch 17 | Train Acc: 98.57% | Val Acc: 100.00%\nEpoch 18 | Train Acc: 100.00% | Val Acc: 96.67%\nEpoch 19 | Train Acc: 100.00% | Val Acc: 96.67%\nEpoch 20 | Train Acc: 99.29% | Val Acc: 96.67%\nEpoch 21 | Train Acc: 100.00% | Val Acc: 100.00%\nEpoch 22 | Train Acc: 98.57% | Val Acc: 100.00%\nEpoch 23 | Train Acc: 98.57% | Val Acc: 100.00%\nEpoch 24 | Train Acc: 99.29% | Val Acc: 96.67%\nEpoch 25 | Train Acc: 100.00% | Val Acc: 96.67%\nEpoch 26 | Train Acc: 100.00% | Val Acc: 96.67%\nEpoch 27 | Train Acc: 100.00% | Val Acc: 100.00%\nEpoch 28 | Train Acc: 99.29% | Val Acc: 100.00%\nEpoch 29 | Train Acc: 100.00% | Val Acc: 100.00%\nEpoch 30 | Train Acc: 100.00% | Val Acc: 96.67%\nFinal Test Accuracy: 100.00%\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "NYQi",
+      "code_hash": "7a03a9df958aed7fa5fd7a45c05e61e5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Prediction: outside (Probability: 0.5046)\nTrue Label: outside\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "wMHN",
+      "code_hash": "d970507731debf95e4ce90d605ee919b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\n-----Validation Performance------\nAccuracy: 96.67%\n\nConfusion Matrix:\n[[15  0]\n [ 1 14]]\n\nClassification Report:\n              precision    recall  f1-score   support\n\n      inside       0.94      1.00      0.97        15\n     outside       1.00      0.93      0.97        15\n\n    accuracy                           0.97        30\n   macro avg       0.97      0.97      0.97        30\nweighted avg       0.97      0.97      0.97        30\n\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "APds",
+      "code_hash": "d2b7383c11fc80cd68b39650e8b0a9d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"model-architecture-cnn-for-dot-position-wrt-fence\">Model Architecture - CNN for dot position w.r.t fence</h2>\n<span class=\"paragraph\">Input Transformation &amp; Convolutional Feature Extraction:\nInput Image (64x64x1) -&gt; Convolution 1 (Outputs 8 channels) -&gt; MaxPool2d (Reduces dimensions to 32x32) -&gt; Convolution 2 (Outputs 16 channels) -&gt; MaxPool2d (Reduces dimensions to 16x16).\n(Note: Kernel 3x3, ReLU activation, and MaxPool2d 2x2 are the same for all convolutional blocks).</span>\n<span class=\"paragraph\">Flattening Step (Connecting Convolutions to Dense Layers):\nOutput of Conv 2 -&gt; 3D Tensor of dimensions [16 channels, 16 height, 16 width] -&gt; Flatten Layer -&gt; Unrolls into a 1D array of 4096 total nodes (16 * 16 * 16 = 4096).</span>\n<span class=\"paragraph\">Fully Connected (Hidden) Layers (Standard Extrapolation for Binary Classification):\nInput from Flatten -&gt; Fully Connected Hidden Layer 1 (Linear Layer) -&gt; Receives 4096 nodes -&gt; Outputs a compressed feature representation (typically 128 or 256 nodes) -&gt; ReLU activation -&gt; Fully Connected Hidden Layer 2 (Optional but common) -&gt; Receives 128 nodes -&gt; Outputs 64 nodes -&gt; ReLU activation.</span>\n<span class=\"paragraph\">Final Output Nodes:\nHidden Layer Output -&gt; Final Linear Layer -&gt; Outputs 1 node (using Sigmoid activation to yield a probability between 0 and 1) OR Outputs 2 nodes (using Softmax activation to yield discrete probabilities for \"inside\" and \"outside\").</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
