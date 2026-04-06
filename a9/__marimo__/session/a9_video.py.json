@@ -1,0 +1,101 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.20.4",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "PKri",
+      "code_hash": "131a9bb5ed93181b4d4a61d74f84db6e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The video taken is that of a mice in a maze. You can observe the black mice moving around in a static maze puzzle. The mouse comes in, explores and finds a way out. Then it goes in again. It is a suitable footage for annotation</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "c4dcf1b037c85385a8e95ae8db4896e3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"q2\">Q2</h2>\n<span class=\"paragraph\">Take a short video of about 30 seconds. Write a program to extract each frame of this\nvideo and save each frame as jpg \ufb01le with naming conven5on frame_nnnnn.jpg. nnnnn\nindicate the frame number in the video. Describe proper5es of the video and the\nextracted jpg \ufb01les.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "ae0fb5571a0d7ceb1f7e2bc115974dc9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "422db87d9c606337a946d59a573288dc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "fps:29.97002997002997\nresolution: 1280x720\ntotal frames: 901\nduration (s): 30.063366666666667\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "b0668771b7a91bc9c9171313100daaa3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "frames saved: 901\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
