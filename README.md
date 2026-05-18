@@ -3,7 +3,7 @@ Repository of machine learning assignments
 
 Major guidelines:
 - Upto Assignment 5 (No AI is used, most barebone coding with building many functions from scratch into modules, which are reused.)
-- Assignment 6 onwards are not that pure(used ai assistance for getting torch modules).
+- Assignment 6 onwards are not that pure(used ai assistance here and there).
 
 ## Assignment 1
 Image Processing
